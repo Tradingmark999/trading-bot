@@ -1,0 +1,5 @@
+binance
+requests
+flask
+python-dotenv
+email-validator
