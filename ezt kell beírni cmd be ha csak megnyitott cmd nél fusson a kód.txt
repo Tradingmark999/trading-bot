@@ -1,0 +1,2 @@
+cd C:\Users\Mark\Desktop\TradingBot
+python tradingbot.py

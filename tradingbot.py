@@ -71,13 +71,13 @@ def read_email():
                                 print(f"📩 Új TradingView riasztás: {body}")
 
                                 # **Kereskedési logika**
-                                if "TRADE: BUY SOLUSDT" in body:
+                                if "TRADE: BUY" in body:
                                     place_order("SOLUSDT", SIDE_BUY)  
-                                elif "TRADE: SELL SOLUSDT" in body:
+                                elif "TRADE: SELL" in body:
                                     place_order("SOLUSDT", SIDE_SELL)  
-                                elif "TRADE: CLOSE BUY SOLUSDT" in body:
+                                elif "TRADE: CLOSE BUY" in body:
                                     close_position("SOLUSDT", SIDE_SELL)  
-                                elif "TRADE: CLOSE SELL SOLUSDT" in body:
+                                elif "TRADE: CLOSE SELL" in body:
                                     close_position("SOLUSDT", SIDE_BUY)  
 
                         mail.store(email_id, "+FLAGS", "\\Seen")
