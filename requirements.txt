@@ -2,4 +2,3 @@ requests
 flask
 gunicorn
 python-dotenv
-binance
