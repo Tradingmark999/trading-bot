@@ -1,5 +1,4 @@
-binance
-requests
 flask
+gunicorn
 python-dotenv
-email-validator
+binance
